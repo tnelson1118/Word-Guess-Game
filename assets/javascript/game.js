@@ -29,10 +29,13 @@ var wins = 0;
 var lettersGuessed = "";
 
 // variable to hold instructions.
-var instructions = "Guess A Letter!";
+var instructions = "Guess A Letter! Topic is animals.";
 
 // variable to guesses remaining and set it to 8.
 var guessRemaining = 8;
+
+// variable to hold the users input during game.
+var userInput;
 
 
 
@@ -47,8 +50,6 @@ function chooseWord() {
     }
 
     document.querySelector("#the-word").innerHTML = answerArray;
-    document.querySelector("#letters-guessed").innerHTML = "Letters Guessed: " + lettersGuessed;
-    document.querySelector("#guesses-remaining").innerHTML = "Guesses Remaining: " + guessRemaining;
     document.querySelector("#hide").innerHTML = " ";
     document.querySelector("#instruction").innerHTML = instructions;
 }
@@ -57,10 +58,20 @@ function updateScore() {
     document.querySelector("#wins").innerHTML = "Wins: " + wins;
 }
 
+function updateGuessRemaining() {
+    document.querySelector("#guesses-remaining").innerHTML = "Guesses Remaining: " + guessRemaining;
+}
+
+function updateLettersGuessed() {
+    document.querySelector("#letters-guessed").innerHTML = "Letters Guessed: " + lettersGuessed;
+}
+
 
 document.onkeyup = function(event) {
     chooseWord();
     updateScore();
+    updateGuessRemaining();
+    updateLettersGuessed();
 }
 
 
