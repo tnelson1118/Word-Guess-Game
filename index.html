@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+<!-- Link our stylesheets, bootstrap, and javascript -->
 <head>
+
     <meta charset="UTF-8">
     <title>Word Guess Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -11,4 +13,33 @@
     <script src="assets/javascript/game.js"></script>
 
 </head>
+
+<!-- Main content on webpage -->
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div id="header" class="col-lg-10 offset-lg-1">
+                <h1>HangMan</h1>
+                <h2>Press any key to get started!</h2>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="row">
+            <div id="left-col" class="col-lg-4 offset-lg-2">
+                <div id="wins"></div>
+                <div id="letters-guessed"></div>
+            </div>
+
+            <div id="right-col" class="col-lg-4">
+                <div id="the-word"></div>
+                <div id="guesses-remaining"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>
