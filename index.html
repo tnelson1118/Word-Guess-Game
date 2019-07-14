@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
 
 </head>
@@ -22,7 +21,7 @@
         <div class="row">
             <div id="header" class="col-lg-10 offset-lg-1">
                 <h1>HangMan</h1>
-                <h2>Press any key to get started!</h2>
+                <h2 id="hide">Press any key to get started!</h2>
             </div>
         </div>
 
@@ -30,14 +29,14 @@
 
         <div class="row">
             <div id="left-col" class="col-lg-4 offset-lg-2">
-                <div id="wins"></div>
-                <div id="letters-guessed"></div>
+                <div id="wins">Wins: </div>
+                <div id="letters-guessed">Letters Guessed: </div>
             </div>
 
             <div id="right-col" class="col-lg-4">
                 <div id="instruction"></div>
                 <div id="the-word"></div>
-                <div id="guesses-remaining"></div>
+                <div id="guesses-remaining">Guesses Remaining: </div>
             </div>
         </div>
 
